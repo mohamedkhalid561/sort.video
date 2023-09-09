@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>quran app</title>
+</head>
+<body>
+    
+    <div class="app-vedio">
+        <div class="vedio">
+            <video src="video/v2.mp4"class="video-player"></video>
+
+                      <div class="footer">
+               <div class="footer-text">
+                <h3>mohamed khalid</h3>
+                <p class="description">welcom to my app</p>
+                <div class="img-marq">
+                    <img src="images/cloudup_icon-icons.com_54402.png">
+                    <marquee>hello worid to my apps new best</marquee>
+                </div>
+               </div> 
+               <img src="images/pngegg.png" alt="" class="image-play">
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const vedios =document.querySelectorAll('video');//حدد كل الفيديوهات
+        for(const video of vedios){//طبق على كل الفيديوهات التي بدخل المتغير
+            video.addEventListener('click',function(){//عند النقر 
+                if(video.paused){//اذا الفيديو متوقف
+                    video.play();//شغلو
+                }else{//او شغال 
+                    video.pause();//وقفو
+                }
+            })
+        }
+    </script>
+</body>
+</html>
